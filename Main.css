@@ -1,0 +1,68 @@
+:root {
+  --white: 255, 255, 255;
+  --black: 0, 0, 0;
+  --red: 229, 57, 53;
+  --orange: 251, 140, 0;
+  --yellow: 253, 216, 53;
+  --green: 67, 160, 71;
+  --blue: 30, 136, 229;
+  --indigo: 57, 73, 171;
+  --violet: 156, 39, 176;
+  
+  --theme-color: var(--black);
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  margin: 0rem;
+  overflow: hidden; 
+}
+
+#blob {
+  background-color: white;
+  height: 34vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(33,33,255), rgb(255,77,70));
+  animation: rotate 20s infinite;
+  opacity: 0.8;
+}
+
+#blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(12vmax);
+}
+
+.ContainerCenter {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  
+}
+
+.Container2 {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+h1 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-size = 3em;
+  color: white;
+  z-index: 3;
+}
