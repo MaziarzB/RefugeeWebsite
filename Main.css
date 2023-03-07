@@ -65,4 +65,11 @@ h1 {
   text-size = 3em;
   color: white;
   z-index: 3;
+  text-align: center;
+}
+
+.box {
+  width: 16rem;
+  height: auto;
+  padding: 1px;
 }
