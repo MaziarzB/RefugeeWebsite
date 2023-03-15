@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgb(22, 22, 22);
   height: 100vh;
   margin: 0rem;
   overflow: hidden; 
@@ -51,6 +51,12 @@ body {
   
 }
 
+.Flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Container2 {
   display: flex;
   flex-grow: 1;
@@ -60,9 +66,17 @@ body {
   
 }
 
+.Secondary {
+  background-color: rgb(94, 207, 252);
+}
+
+.Spacing {
+  height: 25rem;
+}
+
 h1 {
   font-family: "Segoe UI", Arial, sans-serif;
-  text-size = 3em;
+  font-size: 2rem;
   color: white;
   z-index: 3;
   text-align: center;
