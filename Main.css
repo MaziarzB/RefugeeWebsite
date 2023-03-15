@@ -8,6 +8,9 @@
   --blue: 30, 136, 229;
   --indigo: 57, 73, 171;
   --violet: 156, 39, 176;
+
+  --bg-color: rgb(20, 20, 20);
+  --card-color: rgb(23, 23, 23);
   
   --theme-color: var(--black);
 }
@@ -16,7 +19,7 @@ body {
   background-color: rgb(22, 22, 22);
   height: 100vh;
   margin: 0rem;
-  overflow: hidden; 
+  overflow: auto; 
 }
 
 #blob {
@@ -70,11 +73,25 @@ body {
   background-color: rgb(94, 207, 252);
 }
 
+.Third {
+  background-color: rgb(33,33,33);
+  margin: auto;
+  align-items: center;
+}
+
 .Spacing {
-  height: 25rem;
+  height: 40rem;
 }
 
 h1 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 2rem;
+  color: white;
+  z-index: 3;
+  text-align: center;
+}
+
+h2 {
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 2rem;
   color: white;
@@ -86,4 +103,122 @@ h1 {
   width: 16rem;
   height: auto;
   padding: 1px;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;  
+  max-width: 916px;
+  width: calc(100% - 20px);
+}
+
+#cards:hover > .card::after {
+  opacity: 1;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 260px;
+  flex-direction: column;
+  position: relative;
+  width: 300px;  
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card::before,
+.card::after {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+}
+
+.card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y), 
+    rgba(255, 255, 255, 0.06),
+    transparent 40%
+  );
+  z-index: 3;
+}
+
+.card::after {  
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y), 
+    rgba(255, 255, 255, 0.4),
+    transparent 40%
+  );
+  z-index: 1;
+}
+
+.card > .card-content {
+  background-color: var(--card-color);
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  inset: 1px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+}
+
+i {  
+  color: rgb(240, 240, 240);
+}
+
+.card-image {
+  align-items: center;
+  display: flex;
+  height: 140px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-image > i {
+  font-size: 6em;
+  opacity: 0.25;
+}
+
+.card-info-wrapper {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
+  padding: 0px 20px;
+}
+
+.card-info {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+}
+
+.card-info > i {  
+  font-size: 1em;
+  height: 20px;
+  line-height: 20px;
+}
+
+.card-info-title > h3 {
+  font-size: 1.1em;
+  line-height: 20px;
+}
+
+.card-info-title > h4 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85em;
+  margin-top: 8px;
 }
