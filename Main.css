@@ -34,6 +34,7 @@ body {
   background: linear-gradient(to right, rgb(33,33,255), rgb(255,77,70));
   animation: rotate 20s infinite;
   opacity: 0.8;
+  z-index: 1;
 }
 
 #blur {
@@ -73,11 +74,17 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
+
 .Third {
   background-color: rgb(33,33,33);
-  margin: 10px;
+  margin: 0px;
   display: flex;
   justify-content: center;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  z-index: 3;
+  padding: 2rem;
+  position: relative;
 }
 
 .Spacing {
@@ -119,6 +126,7 @@ h3, h4, span {
   gap: 8px;  
   max-width: 916px;
   width: calc(100% - 20px);
+  z-index: 4;
 }
 
 #cards:hover > .card::after {
@@ -133,7 +141,7 @@ h3, h4, span {
   height: 260px;
   flex-direction: column;
   position: relative;
-  width: 300px;  
+  width: 300px;
 }
 
 .card:hover::before {
