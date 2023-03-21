@@ -12,7 +12,7 @@
   --bg-color: rgb(20, 20, 20);
   --card-color: rgb(23, 23, 23);
   
-  --theme-color: var(--black);
+  --theme-color: var(--red);
 }
 
 body {
@@ -76,7 +76,13 @@ body {
 
 
 .Third {
-  background-color: rgb(33,33,33);
+  background-color: black;
+  background-image: radial-gradient(
+    rgba(var(--theme-color), 0.4) 9%, 
+    transparent 9%
+  );
+  background-position: 0% 0%;
+  background-size: 50px 50px;
   margin: 0px;
   display: flex;
   justify-content: center;
@@ -127,6 +133,11 @@ h3, h4, span {
   max-width: 916px;
   width: calc(100% - 20px);
   z-index: 4;
+  background-color: rgb(33, 33, 33);
+  padding: 10px;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 30px #6439ff41;
+  backdrop-filter: blur();
 }
 
 #cards:hover > .card::after {
