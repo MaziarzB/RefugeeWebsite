@@ -17,7 +17,7 @@ body {
   background-color: rgb(22, 22, 22);
   height: 100vh;
   margin: 0rem;
-  overflow: auto; 
+  overflow: auto;
 }
 
 #blob {
@@ -29,7 +29,7 @@ body {
   top: 50%;
   translate: -50% -50%;
   border-radius: 50%;
-  background: linear-gradient(to right, rgb(33,33,255), rgb(255,77,70));
+  background: linear-gradient(to right, rgb(33, 33, 255), rgb(255, 77, 70));
   animation: rotate 20s infinite;
   opacity: 0.8;
   z-index: 1;
@@ -50,7 +50,6 @@ body {
   justify-content: center;
   gap: 40px;
   align-items: center;
-  
 }
 
 .Flexbox {
@@ -65,18 +64,16 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  
 }
 
 .Secondary {
   background-color: rgb(0, 0, 0);
 }
 
-
 .Third {
   background-color: rgb(12, 12, 12);
   background-image: radial-gradient(
-    rgba(255,255,255, 0.1) 9%, 
+    rgba(255, 255, 255, 0.1) 9%,
     transparent 15%
   );
   background-position: 0% 0%;
@@ -98,22 +95,21 @@ body {
 }
 
 .LearnMore {
-  background-color: rgb(33,33,33);
+  background-color: rgb(33, 33, 33);
   appearance: none;
   outline: none;
   border: none;
   border-radius: 29px;
-  margin: 0;
   color: #616161;
-  font-family: 'Poppins', Arial;
+  font-family: "Poppins", Arial;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   width: 150px;
   height: 50px;
   margin: 10px;
-  box-shadow: 00px 10px 10px rgb(11,11,11);
-  transition: all 0.25s ease-in-out 50ms
+  box-shadow: 00px 10px 10px rgb(11, 11, 11);
+  transition: all 0.25s ease-in-out 50ms;
 }
 .LearnMore:hover {
   color: white;
@@ -139,7 +135,9 @@ h2 {
   text-align: center;
 }
 
-h3, h4, span {
+h3,
+h4,
+span {
   color: rgb(240, 240, 240);
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -155,7 +153,7 @@ h3, h4, span {
 #cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;  
+  gap: 8px;
   max-width: 916px;
   width: calc(100% - 20px);
   z-index: 4;
@@ -199,16 +197,16 @@ h3, h4, span {
 
 .card::before {
   background: radial-gradient(
-    800px circle at var(--mouse-x) var(--mouse-y), 
+    800px circle at var(--mouse-x) var(--mouse-y),
     rgba(255, 255, 255, 0.02),
     transparent 40%
   );
   z-index: 3;
 }
 
-.card::after { 
+.card::after {
   background: radial-gradient(
-    600px circle at var(--mouse-x) var(--mouse-y), 
+    600px circle at var(--mouse-x) var(--mouse-y),
     rgba(255, 255, 255, 0.4),
     transparent 40%
   );
@@ -217,7 +215,7 @@ h3, h4, span {
 
 .card > .card-content {
   background-color: var(--card-color);
-  background-color: rgba(11,11,11,0.9);
+  background-color: rgba(11, 11, 11, 0.9);
   border-radius: inherit;
   display: flex;
   flex-direction: column;
@@ -228,7 +226,7 @@ h3, h4, span {
   z-index: 2;
 }
 
-i {  
+i {
   color: rgb(240, 240, 240);
 }
 
@@ -259,7 +257,7 @@ i {
   gap: 10px;
 }
 
-.card-info > i {  
+.card-info > i {
   font-size: 1em;
   height: 20px;
   line-height: 20px;
@@ -276,44 +274,44 @@ i {
   margin-top: 8px;
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   body {
-    align-items: flex-start;  
+    align-items: flex-start;
     overflow: auto;
   }
-  
-  #cards {    
+
+  #cards {
     max-width: 1000px;
     padding: 10px 0px;
   }
-  
+
   .card {
     flex-shrink: 1;
     width: calc(50% - 4px);
   }
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .card {
     height: 180px;
   }
-  
+
   .card-image {
-    height: 80px;  
+    height: 80px;
   }
-  
+
   .card-image > i {
     font-size: 3em;
   }
-    
+
   .card-info-wrapper {
     padding: 0px 10px;
   }
-  
-  .card-info > i { 
-    font-size: 0.8em; 
+
+  .card-info > i {
+    font-size: 0.8em;
   }
-  
+
   .card-info-title > h3 {
     font-size: 0.9em;
   }
@@ -324,8 +322,14 @@ i {
   }
 }
 
-@media(max-width: 320px) {
+@media (max-width: 320px) {
   .card {
     width: 100%;
   }
+}
+
+a {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
 }
