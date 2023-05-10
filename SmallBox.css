@@ -116,4 +116,5 @@ button {
   background-color: rgb(44, 44, 44);
   border: 2px solid rgb(100, 100, 100);
   margin: 15px;
+  cursor: pointer;
 }
