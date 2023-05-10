@@ -1,0 +1,119 @@
+:root {
+  --white: 255, 255, 255;
+  --black: 0, 0, 0;
+  --red: 229, 57, 53;
+  --orange: 251, 140, 0;
+  --yellow: 253, 216, 53;
+  --green: 67, 160, 71;
+  --blue: 30, 136, 229;
+  --indigo: 57, 73, 171;
+  --violet: 156, 39, 176;
+
+  --bg-color: rgb(20, 20, 20);
+  --card-color: rgb(23, 23, 23);
+}
+
+#blob {
+  background-color: white;
+  height: 34vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(33, 33, 255), rgb(255, 77, 70));
+  animation: rotate 20s infinite;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+#blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(12vmax);
+}
+
+
+body {
+  background-color: rgb(22, 22, 22);
+  height: 100vh;
+  margin: 0rem;
+  overflow: hidden; 
+}
+
+/* Omni Page CSS*/
+h1 {
+  font-family: "Poppins", Arial;
+  color: rgb(255,255,255);
+}
+h2 {
+  font-family: "Poppins", Arial;
+  color: rgb(255,255,255);
+}
+a {
+  font-family: "Poppins", Arial;
+  color: rgb(255,255,255);
+}
+.RoundBox {
+  z-index: 3;
+  background-color: rgb(33,33,33);
+  border-color: rgb(255,0,0);
+  Width: 40%;
+  border-radius: 1rem; 
+  
+  flex: display;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  
+  padding: 25px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  border-radius: 2;
+  margin: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  
+  border: 2px solid rgb(100, 100, 100);
+  box-shadow: 0px 30px 100px rgb(11, 11, 11);
+}
+
+.Mid {
+  background-color: rgb(44,44,44);
+  border-color: rgb(255,0,0);
+  padding: 25px;
+  padding-top: 5px;
+  border-radius: 1rem; 
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  justify-content: start;
+  
+  border: 2px solid rgb(100, 100, 100);
+  gap: 10px;
+}
+
+.Center {
+  display: flex;
+  justify-content: center;
+  
+}
+
+button {
+  background-color: rgb(255,44,44);
+  padding: 7px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+  background-color: rgb(44, 44, 44);
+  border: 2px solid rgb(100, 100, 100);
+  margin: 15px;
+}
