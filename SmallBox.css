@@ -53,6 +53,15 @@ h2 {
   font-family: "Poppins", Arial;
   color: rgb(255,255,255);
 }
+h3 {
+  font-family: "Poppins", Arial;
+  color: rgb(255,255,255);
+}
+h4 {
+  font-family: "Poppins", Arial;
+  color: rgb(255,255,255);
+  font-weight: 50;
+}
 a {
   font-family: "Poppins", Arial;
   color: rgb(255,255,255);
@@ -104,7 +113,17 @@ a {
 .Center {
   display: flex;
   justify-content: center;
-  
+}
+
+.Facts{
+  border-radius: 10px;
+  display: flex;
+  background-color: rgb(22, 22, 22);
+  flex-direction: column;
+  width: 100%;
+  padding: 15px;
+  padding-top: 1px;
+  border: 2px solid rgb(100, 100, 100);
 }
 
 button {
