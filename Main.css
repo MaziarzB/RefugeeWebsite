@@ -48,7 +48,7 @@ body {
   flex-grow: 1;
   flex-direction: row;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   align-items: center;
 }
 
@@ -91,7 +91,7 @@ body {
 }
 
 .Spacing {
-  height: 10rem;
+  height: 5rem;
 }
 
 .LearnMore {
